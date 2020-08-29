@@ -1,4 +1,4 @@
-Install:
+Install it to your TestNet Node VPS:
 
 ```
 git clone https://github.com/MxShift/testnet-test
