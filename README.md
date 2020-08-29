@@ -33,13 +33,13 @@ Y
 ```
 crontab -e
 ```
-paste it to run script every hour
+paste it to run script *every hour*
 ```
 #Test for TestNet
 @hourly bash ~/testnet-test/script.sh
 ```
 
-or, to run script daily
+or, to run script *daily*
 
 ```
 #Test for TestNet
