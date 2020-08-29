@@ -3,6 +3,10 @@
 secret=""
 secondSecret="null"
 
+minAmmount=1 # 0,001 SHIFT
+maxAmmount=12000 # 12 SHIFT
+
+
 # Randomize timeout from 1 second to 1 hour
 
 timeout=0 #initialize
@@ -17,15 +21,15 @@ echo "Timeout: $timeout seconds"
 
 sleep $timeout
 
-# Randomize ammount of transaction from 0,5 to 19 SHIFT
+# Randomize ammount of transaction
 
 number=0   #initialize
-while [ "$number" -le 5 ] #Limit "low" by 0,5 SHIFT.
+while [ "$number" -le $minAmmount ] #Limit "low" by minimal ammount.
 do
   number=$RANDOM
-  let "number %= 190"  # Limit "top" by 19 SHIFT.
+  let "number %= $maxAmmount"  # Limit "top" by maximal ammount.
 done
 
-let "number*=10000000" # Multiply
+let "number*=100000" # Multiply
 
 curl -k -H  "Content-Type: application/json" -X PUT -d '{"recipientId": "18446744073709551616S", "amount": '$number', "secondSecret": "'//"$secondSecret"'", "secret": "'"$secret"'"}' http://localhost:9405/api/transactions
