@@ -13,15 +13,20 @@ nano script.sh
 
 Edit `script.sh` with
 ```
-"secret": "your 12 words of secret passphrase"
+secret="your 12 words of secret passphrase"
 ```
 
 or, also if you have second secret
 
 ```
-"secondSecret": "your second secret"
+secondSecret="your second secret"
 ```
 
+Save data to script file
+```
+CTRL + X
+Y
+```
 
 *Settings for Cron:*
 
