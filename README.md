@@ -1,12 +1,16 @@
 Settings:
 
 ```
-"secret": "your 12 words of secret passphrase"
-
-"secondSecret": "null"
+cd testnet-test
+nano script.sh
 ```
 
-or, if you have second secret
+Edit `script.sh` with
+```
+"secret": "your 12 words of secret passphrase"
+```
+
+or, also if you have second secret
 
 ```
 "secondSecret": "your second secret"
