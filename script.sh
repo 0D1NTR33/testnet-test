@@ -1,3 +1,8 @@
+# Settings
+
+secret=""
+secondSecret="null"
+
 # Randomize timeout from 1 second to 1 hour
 
 timeout=0 #initialize
@@ -23,4 +28,4 @@ done
 
 let "number*=10000000" # Multiply
 
-curl -k -H  "Content-Type: application/json" -X PUT -d '{"recipientId": "18446744073709551616S", "amount": '$number', "secondSecret": "null", "secret": ""}' http://localhost:9405/api/transactions
+curl -k -H  "Content-Type: application/json" -X PUT -d '{"recipientId": "18446744073709551616S", "amount": '$number', "secondSecret": "'//"$secondSecret"'", "secret": "'"$secret"'"}' http://localhost:9405/api/transactions
