@@ -21,14 +21,14 @@ crontab -e
 paste it to run script every hour
 ```
 #Test for TestNet
-@hourly ~/shift-pool-t/test.sh
+@hourly ~/testnet-test/script.sh
 ```
 
 or, to run script daily
 
 ```
 #Test for TestNet
-@daily bash ~/shift-pool-t/test.sh
+@daily bash ~/testnet-test/script.sh
 ```
 Save data to cron
 ```
