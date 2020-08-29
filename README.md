@@ -21,7 +21,7 @@ crontab -e
 paste it to run script every hour
 ```
 #Test for TestNet
-@hourly ~/testnet-test/script.sh
+@hourly bash ~/testnet-test/script.sh
 ```
 
 or, to run script daily
