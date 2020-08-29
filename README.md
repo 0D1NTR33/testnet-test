@@ -1,10 +1,10 @@
-Install it to your TestNet Node VPS:
+**Install it to your TestNet Node VPS:**
 
 ```
 git clone https://github.com/MxShift/testnet-test
 ```
 
-Settings:
+**Settings:**
 
 ```
 cd testnet-test
@@ -28,7 +28,7 @@ CTRL + X
 Y
 ```
 
-*Settings for Cron:*
+**Settings for Cron:**
 
 ```
 crontab -e
@@ -50,3 +50,4 @@ Save data to cron
 CTRL + X
 Y
 ```
+**Enjoy!** 🎉
