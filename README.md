@@ -26,6 +26,7 @@ Save data to script file
 ```
 CTRL + X
 Y
+ENTER
 ```
 
 **Settings for Cron:**
@@ -49,5 +50,6 @@ Save data to cron
 ```
 CTRL + X
 Y
+ENTER
 ```
 **Enjoy!** 🎉
