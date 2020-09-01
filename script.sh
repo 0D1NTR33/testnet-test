@@ -3,31 +3,31 @@
 secret=""
 secondSecret="null"
 
-minAmmount=1 # 0,001 SHIFT
-maxAmmount=12000 # 12 SHIFT
+minAmount=1 # 0,001 SHIFT
+maxAmount=12000 # 12 SHIFT
 
 
 # Randomize timeout from 1 second to 1 hour
 
 timeout=0 #initialize
 
-while [ "$timeout" -le 1 ] #Limit "low" by 1 second.
+while [ "$timeout" -le 1 ] #Limit "low" by 1 second
 do
   timeout=$RANDOM
-  let "timeout %= 3600"  # Limit "top" by 3600 seconds.
+  let "timeout %= 3600"  # Limit "top" by 3600 seconds
 done
 
 echo "Timeout: $timeout seconds"
 
 sleep $timeout
 
-# Randomize ammount of transaction
+# Randomize amount of transaction
 
 number=0   #initialize
-while [ "$number" -le $minAmmount ] #Limit "low" by minimal ammount.
+while [ "$number" -le $minAmount ] #Limit "low" by minimal amount
 do
   number=$RANDOM
-  let "number %= $maxAmmount"  # Limit "top" by maximal ammount.
+  let "number %= $maxAmount"  # Limit "top" by maximal amount
 done
 
 let "number*=100000" # Multiply
